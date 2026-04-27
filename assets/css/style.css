@@ -39,17 +39,17 @@ body {
 .nav__list {
     display: flex;
     gap: 2rem;
-    list-style: none; /* Quita los puntos/números de la lista */
+    list-style: none; /* Remove list dots or numbers */
 }
 
 .link a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Transición suave para el hover */
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
-/* Actualizamos el hover de los enlaces para que también brillen */
+/* Hove config so the links can shine */
 .link a:hover {
     color: red;
     text-shadow: 0 0 8px var(--glow-yellow), 0 0 20px var(--glow-yellow);
@@ -74,7 +74,7 @@ body {
     height: 600px;
     margin: 0;
     padding: 0;
-    animation: cambio 10s infinite alternate ease;
+    animation: change 10s infinite alternate ease;
 }
 
 .container__img1 li {
@@ -109,6 +109,7 @@ body {
 .overlay__text h2{
     font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
     color: red;
+    text-align: center;
 }
 
 
@@ -116,7 +117,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Transición suave para el hover */
+    transition: color 0.3s ease; /* Smooth transition for hover */
     background-color: red;
     border-radius: 14px;
     padding: 1rem;
@@ -127,7 +128,7 @@ body {
 }
 
 
-@keyframes cambio {
+@keyframes change {
     0% { margin-left: 0%; }
     30% { margin-left: 0%; }
 
@@ -229,6 +230,7 @@ table.events__table thead th:first-child {
     flex-direction: column;
     font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
     align-items: center;
+    text-align: center;
 }
 
 /*----------------------- MEDIA SECTION ----------------------------*/
@@ -243,19 +245,20 @@ table.events__table thead th:first-child {
 }
 
 .projects-container {
-    width: 60%; /* Requisito del usuario */
+    width: 60%; 
     margin: 0 auto;
 }
 
 .projects-grid {
     display: grid;
-    /* Crea columnas automáticas que se adaptan al espacio */
+    /* Create automatic columns that adapt to the space */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     list-style: none;
+    justify-content: center;
 }
 
-/* Tarjeta de Proyecto */
+/* Project card */
 .project-card {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
@@ -263,7 +266,7 @@ table.events__table thead th:first-child {
     border-radius: 8px;
 }
 
-/* El "Marco de Cuadro" */
+/* Picture frame */
 .project-frame {
     border: 8px ridge #771010; /* Efecto marco de galería */
     overflow: hidden;
@@ -279,7 +282,7 @@ table.events__table thead th:first-child {
     filter: grayscale(30%);
 }
 
-/* Animación al pasar el cursor */
+/* Animation with cursor */
 .project-card:hover {
     transform: translateY(-10px);
     background-color: rgba(255, 255, 255, 0.1);
@@ -319,7 +322,7 @@ table.events__table thead th:first-child {
     gap: 30px;
 }
 
-/* Marca en el Footer */
+/* Footer mark */
 .footer-logo {
     font-size: 2rem;
     text-shadow: 0 0 8px var(--glow-light);
@@ -332,7 +335,7 @@ table.events__table thead th:first-child {
     letter-spacing: 1px;
 }
 
-/* Redes Sociales */
+/* Social Media */
 .footer-social h3 {
     display: flex;
     justify-content: center;
@@ -361,7 +364,7 @@ table.events__table thead th:first-child {
     text-shadow: 0 0 10px rgb(187, 43, 43);
 }
 
-/* Copyright y Botón arriba */
+/* Copyright */
 .footer-copy {
     text-align: right;
 }
@@ -395,7 +398,18 @@ table.events__table thead th:first-child {
     gap: 1rem;
     align-items: flex-end;
     }
-
+    /*----------------------- ABOUT SECTION ----------------------------*/
+    .about__stuff {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__content{
+        width: 100%;
+    }
+    .about__text {
+        width: 100%;
+    }
+    /*----------------------- FOOTER SECTION ----------------------------*/
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -404,24 +418,17 @@ table.events__table thead th:first-child {
     .footer-copy {
         text-align: center;
     }
-    
-    
-    body {
-        font-size: 14px;
     }
+    
+    /* body {
+        font-size: 14px; */
+    
 
-    main {
+    /* main {
         width: 95%;
-    }
+    } */
 
-    section {
+    /* section {
         margin: 2rem 0;
-    }
+    } */
 
-    /* Hint clave */
-    /* piensa en:
-       - menús colapsables
-       - layouts en columna
-       - imágenes adaptativas
-    */
-}
