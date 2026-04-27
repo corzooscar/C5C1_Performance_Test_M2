@@ -1,5 +1,5 @@
 C5C1_Performance_Test_M2
-# 🧪 Performance Test — Frontend Web
+# 🧪 Performance Test 
 ### HTML · CSS · JavaScript
 
 > Project developed as a performance assessment for the frontend web development module at **RIWI**.
