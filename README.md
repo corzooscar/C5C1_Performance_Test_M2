@@ -22,20 +22,6 @@ This project involves building a responsive web page that puts into practice the
 
 ---
 
-## 📁 Project structure
-
-```
-📦 performance-test/
-├── 📄 index.html        # Main page
-├── 🎨 styles/
-│   └── style.css        # Global styles
-├── ⚡ scripts/
-│   └── main.js          # Logic and interactivity
-└── 📖 README.md         # Project documentation
-```
-
----
-
 ## ✅ Features
 
 - [x] Semantic HTML structure (`header`, `main`, `section`, `footer`)
@@ -50,7 +36,7 @@ This project involves building a responsive web page that puts into practice the
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/corzooscar/<repo-name>.git
+   git clone https://github.com/corzooscar/C5C1_Performance_Test_M2.git
    ```
 
 2. Open the `index.html` file directly in your browser.
@@ -79,6 +65,6 @@ Software Development Student — RIWI
 ---
 
 <p align="center">
-  Built with 💻 and a lot of coffee ☕ — RIWI 2025
+  Christ is king — RIWI 2026
 </p>
 ```
